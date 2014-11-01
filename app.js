@@ -2,18 +2,20 @@ main = function () {
     $(".navbar-nav li").click(function () {
         var dropdown = $(".dropdown");
         if (dropdown.hasClass("activate")) { /*dropdown checking*/
-            $(".dropdown-menu").hide();
+            $(".dropdown-menu").hide(300);
         }
         var current = $(".activate");
         current.removeClass("activate");
         $(this).addClass("activate");
     });
+
     $(".dropdown-toggle").click(function () { /*dropdown toggling*/
-        $(".dropdown-menu").toggle();
+        $(".dropdown-menu").toggle(300);
     });
     $(".dropdown-menu").click(function () { /*dropdown hiding*/
-        $(".dropdown-menu").hide();
+        $(".dropdown-menu").hide(600, "easeInElastic");
     });
+
     //Collapses the navigation bar when scrolled down
     $(document).scroll(function () {
         var current_scroll_top = $(document).scrollTop();

@@ -8,8 +8,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 .jumbotron {
     height:100vh;
-    background-image:url("http://goo.gl/LzlK6j");
+    background-image:url("Images/K2_Mount_Godwin_Austen_Chogori_Savage_Mountain1111.jpg");
     background-attachment:fixed;
+    background-size:cover;
 }
 
 
@@ -54,3 +55,12 @@ article header {
     color:rgb(213, 213, 213);
 }
 /*=======================================*/
+/*About us section*/
+.Image_opc{
+    opacity:0.4;
+    filter:alpha(opacity=40);
+}
+.Image_opc:hover{
+    opacity:1;
+}
+/*================*/
