@@ -26,3 +26,16 @@ span {
     font-size: 18px;
     border-top: 2px solid Silver;
 }
+#Total {
+    width:auto;
+    padding:0 0 0 0;
+}
+/*Transparent the Main top navigation bar*/
+.transperent_nav{
+    background-color:rgba(0, 0, 0, 0.00);
+    border-color:rgba(0, 0, 0, 0.00);
+}
+.transperent_nav .nav ul li a {
+    color:rgb(213, 213, 213);
+}
+/*=======================================*/
