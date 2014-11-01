@@ -1,0 +1,12 @@
+body{
+    background:rgb(180, 180, 180);
+}
+
+.jumbotron {
+    height:100vh;
+    background-image:url("http://goo.gl/LzlK6j");
+    background-attachment:fixed;
+}
+#Center{
+    text-align:center;
+}
