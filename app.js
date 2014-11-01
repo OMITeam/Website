@@ -1,8 +1,18 @@
 main = function () {
     $(".navbar-nav li").click(function () {
-        var current = $(".active");
-        current.removeClass("active");
-        $(this).addClass("active");
+        var dropdown = $(".dropdown");
+        if (dropdown.hasClass("activate")) { /*dropdown checking*/
+            $(".dropdown-menu").hide();
+        }
+        var current = $(".activate");
+        current.removeClass("activate");
+        $(this).addClass("activate");
+    });
+    $(".dropdown-toggle").click(function () { /*dropdown toggling*/
+        $(".dropdown-menu").toggle();
+    });
+    $(".dropdown-menu").click(function () { /*dropdown hiding*/
+        $(".dropdown-menu").hide();
     });
     $(".dropdown-toggle").click(function () {
         $(".dropdown-menu").toggle();

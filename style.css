@@ -12,12 +12,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     background-attachment:fixed;
 }
 
+
 #center{
     text-align:center;
 }
 
 span {
     color: Silver;
+}
+
+.activate {
+    border-bottom: 4px solid Green;
+}
+
+article {
+    float: left;
+}
+
+article header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    border-bottom: 2px solid Silver;
 }
 
 .footer {
