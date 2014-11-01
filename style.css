@@ -12,6 +12,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     background-attachment:fixed;
 }
 
+
 #center{
     text-align:center;
 }
@@ -19,6 +20,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 span {
     color: Silver;
 }
+
+.activate {
+    border-bottom: 4px solid Green;
+} 
 
 .footer {
     text-align: center;
