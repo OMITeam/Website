@@ -62,7 +62,14 @@
     }
     nav.transperent_nav.navbar.navbar-default.navbar-fixed-top  a {
         color:rgb(255, 255, 255) !important;
+        
     }
+    nav.transperent_nav.navbar.navbar-default.navbar-fixed-top .dropdown-menu a:hover {
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+        background-color:rgba(255, 255, 255, 0);
+        
+    }
+
 
 /*Main jumbotron*/
     .jumbotron {
