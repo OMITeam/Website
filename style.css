@@ -6,6 +6,10 @@
         align-content:center;
         align-items:center;
     }
+    #right{
+        text-align:right;
+        float:right;
+    }
 
 /*Total propartys*/
     article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{
@@ -20,6 +24,25 @@
     }
 
 /*Navigation Bar*/
+    .navbar-brand{
+        padding-top:0px;
+    }
+    .transperent_nav .LOGO{
+        height:90px;
+        width:130px;
+        background-image:url("Images/OMI-LOGO_INV.png");
+        background-size:cover;
+        background-repeat:no-repeat;
+        opacity:0.6;
+    }
+    .LOGO{
+        background-image:url("Images/OMI-LOGO_COL.png");
+        height:50px;
+        width:196px;
+        background-size:cover;
+        background-repeat:no-repeat;
+        opacity:0.8;
+    }
     .activate {
         border-bottom: 4px solid Green;
     }
