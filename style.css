@@ -1,3 +1,7 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+
 body{
     background:rgb(180, 180, 180);
 }
@@ -37,9 +41,9 @@ article header {
 
 .footer {
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    color: blue;
+    color: rgba(0, 0, 0, 0.77);
     font-weight: bold;
     border-top: 2px solid Silver;
 }
@@ -68,8 +72,8 @@ article header {
 .about_name {
     font-size: 24px;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    color: blue;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
 }
 
 .Image_opc{
@@ -80,7 +84,7 @@ article header {
 }
 
 .Image_opc:hover{
-    opacity:1;
+    opacity:0.8;
 }
 
 /*================*/
