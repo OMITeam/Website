@@ -15,12 +15,28 @@ main = function () {
 /*Navigation bar collapse function*/
 var Navigation_collaps = function(){
     var current_scroll_top = $(document).scrollTop();
+    var current_scroll_bot = $(window).height() - current_scroll_top;
     if (current_scroll_top >= 50) {
         $(".transperent_nav").removeClass("transperent_nav", 200);
     } else {
         $("#Main_nav").addClass("transperent_nav", 200);
     }
+    //600 - 1282 = about - collapse
+    var current = $(".activate");
+    if (current !== null) {
+        current.removeClass("activate");
+    }
+    var about = $(".about_us");
+    var Aoffset = $(".about_us").offset();
+    var Atop = Aoffset.top;
+    var Abot = Atop - about.height();
+    if (current_scroll_top >= Atop) {
+        $(".about").addClass("activate");
+    } else {
+        $(".home").addClass("activate");
+    }
 }
+
 /*Highlight the selected item*/
 var Navnar_highlight = function () {
     var current = $(".activate");

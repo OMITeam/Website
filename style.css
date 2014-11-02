@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 
-
 /*Total ids*/
     #center{
         text-align:center;
@@ -9,21 +8,28 @@
     }
 
 /*Total propartys*/
-    article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{ display:block}
-    body        {   background:rgb(180, 180, 180);  font-family: 'Open Sans', sans-serif;}
-    span        {   color: Silver;}
+    article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{
+         display:block;
+    }
+    body {
+         background:rgb(180, 180, 180);
+         font-family: 'Open Sans', sans-serif;
+    }
+    span {
+         color: Silver;
+    }
 
 /*Navigation Bar*/
     .activate {
         border-bottom: 4px solid Green;
     }
-    .transperent_nav{
+    .transperent_nav {
         background-color:rgba(0, 0, 0, 0.00);
         border-color:rgba(0, 0, 0, 0.00);
     }   
-        .transperent_nav .nav ul li a {/*Try to fix this issue and then remove the comment*/
-            color:rgb(213, 213, 213);
-        }
+    .transperent_nav .nav ul li a {/*Try to fix this issue and then remove the comment*/
+        color:rgb(186, 178, 178);
+    }
 
 /*Main jumbotron*/
     .jumbotron {
