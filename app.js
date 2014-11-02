@@ -87,7 +87,7 @@ var removeActivate = function () {
 var Navnar_highlight = function () {
     removeActivate();
     if (!$(this).hasClass("dropdown")) {
-        $(this).addClass("activate", 600);
+        $(this).addClass("activate");
     }
 }
 
