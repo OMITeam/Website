@@ -2,16 +2,17 @@ main = function () {
     $(".navbar-nav li").click(function () {
         var current = $(".activate");
         if(current !== null){
-            current.removeClass("activate");
+            current.removeClass("activate", 600);
         }
         if(!$(this).hasClass("dropdown")){
-            $(this).addClass("activate");
+            $(this).addClass("activate", 600);
         }
     });
 
     $(".dropdown-toggle").click(function () { /*dropdown toggling*/
-        $(".dropdown-menu").toggle(300);
+        $(".dropdown-menu").toggle(600);
     });
+
     $(".dropdown-menu").click(function () { /*dropdown hiding*/
         $(".dropdown-menu").hide(600, "easeInElastic");
     });

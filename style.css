@@ -65,11 +65,16 @@ article header {
 
 /*About us section*/
 
+.about_us {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif'Times New Roman', Times, serif;
+}
+
 .about_name {
     font-size: 24px;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif'Times New Roman', Times, serif;
+    color: rgb(199, 225, 235);
 }
 
 .Image_opc{
