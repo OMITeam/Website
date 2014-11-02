@@ -98,7 +98,9 @@
     .Image_opc:hover{
         opacity:1;
     }
-
+    .about_info_hide{
+        
+    }
 /*===Footer===*/
     .footer {
         text-align: center;

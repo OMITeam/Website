@@ -12,8 +12,20 @@ main = function () {
     /*Collapses the navigation bar when scrolled down*/
      $(document).scroll(Navigation_collaps);
     /*Collapses the navigation bar items when scrolled down*/
-    $(document).scroll(collapseItems);
+     $(document).scroll(collapseItems);
+     $(".about_us a").click(collaps_about_us(this));
 };
+
+
+/*Collaps the information
+ * Input: image pressed
+ * Output: collapses the iformation
+ */
+var collaps_about_us = function (item) {
+    name = "#" + $(item).attr('id') + "_about";
+    $(name).show();
+}
+
 /*Navigation bar collapse function*/
 var Navigation_collaps = function () {
     var current_scroll_top = $(document).scrollTop();
@@ -25,7 +37,7 @@ var Navigation_collaps = function () {
     }
     
 }
-
+/*Ofir the gay dont touch*/
 var collapseItems = function () {
     var current_scroll_top = $(document).scrollTop();    
 
