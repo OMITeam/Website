@@ -18,15 +18,17 @@ main = function () {
     });
 
     //Collapses the navigation bar when scrolled down
-    $(document).scroll(function () {
-        var current_scroll_top = $(document).scrollTop();
-        if (current_scroll_top >= 30) {
-            $(".transperent_nav").removeClass("transperent_nav" , 200);
-        } else {
-            $("#Main_nav").addClass("transperent_nav" , 200);
-        }
-    });
+    $(document).scroll(scrollFucntion);
 };
+
+var scrollFucntion = function(){
+    var current_scroll_top = $(document).scrollTop();
+    if (current_scroll_top >= 50) {
+        $(".transperent_nav").removeClass("transperent_nav", 200);
+    } else {
+        $("#Main_nav").addClass("transperent_nav", 200);
+    }
+}
 
 
 $(document).ready(main);
