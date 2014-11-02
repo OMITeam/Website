@@ -81,6 +81,7 @@
         background-image:url("Images/K2_Mount_Godwin_Austen_Chogori_Savage_Mountain1111.jpg");
         background-attachment:fixed;
         background-size:cover;
+        box-shadow: inset 0px -14px 37px 0px rgba(0,0,0,0.75);
     }
 
 /*About us section*/
