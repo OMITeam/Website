@@ -27,32 +27,57 @@ var Navigation_collaps = function () {
 }
 
 var collapseItems = function () {
-    var current_scroll_top = $(document).scrollTop();
-    var current_scroll_bot = $(window).height() - current_scroll_top;
+    var current_scroll_top = $(document).scrollTop();    
 
+    var about = collapseItem("about_us", current_scroll_top);
+    var contact = collapseItem("contact_us", current_scroll_top);
+    if (about || contact) {
+        return;
+    } else {
+        removeActivate();
+        $(".home").addClass("activate");
+    }
+}
+
+var collapseItem = function (id, current) {
+    id = "." + id;
+    var item = $(id);
+    var Ioffset = item.offset();
+    var Itop = Ioffset.top - 50;
+    var Ibot = Itop - item.height();
+    var idl = id.substring(0, id.length-3);
+
+    if ((current >= Itop) && ((current - Ibot) >= (item.height() - 50)) && ((current - Ibot) < Itop)) {
+        if (!checkActivate()) {
+            return;
+        }
+        if (getActivate() === $(idl)) {
+            return;
+        }
+        removeActivate();
+        $(idl).addClass("activate");
+        return true;
+    }
+}
+
+var checkActivate = function () {
+    var current = $(".activate");
+    return (current !== null);
+}
+
+var getActivate = function () {
+    if(!checkActivate()){
+        return null;
+    }
+    var current = $(".activate");
+    return current;
+}
+
+var removeActivate = function () {
     var current = $(".activate");
     if (current !== null) {
         current.removeClass("activate");
     }
-    /*About Us -- Variables*/
-    var about = $(".about_us");
-    var Aoffset = $(".about_us").offset();
-    var Atop = Aoffset.top - 50;
-    var Abot = Atop - about.height();
-    /*Contact -- Variables*/
-    var contact = $(".contact_us");
-    var Coffset = $(".contact_us").offset();
-    var Ctop = Coffset.top - 50;
-    var Cbot = Ctop - contact.height();
-
-    if ((current_scroll_top >= Atop) && ((current_scroll_top - Abot) >= (about.height() - 50)) && ((current_scroll_top - Abot) < Atop)) {
-        $(".about").addClass("activate");
-    } else if ((current_scroll_top >= Ctop) && ((current_scroll_top - Cbot) >= (contact.height() - 50)) && (Ctop > (current_scroll_top - Cbot))) {
-        $(".contact").addClass("activate");
-    } else {
-        $(".home").addClass("activate");
-    }
-    
 }
 
 /*Highlight the selected item
@@ -60,10 +85,7 @@ var collapseItems = function () {
  * Output:Highlights the current tab
  */
 var Navnar_highlight = function () {
-    var current = $(".activate");
-    if (current !== null) {
-        current.removeClass("activate", 600);
-    }
+    removeActivate();
     if (!$(this).hasClass("dropdown")) {
         $(this).addClass("activate", 600);
     }

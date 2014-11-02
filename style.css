@@ -44,7 +44,7 @@
         opacity:0.8;
     }
     .activate {
-        border-bottom: 4px solid Green;
+        border-bottom: 2px solid Green;
     }
     .transperent_nav {
         background-color:rgba(0, 0, 0, 0.00);
