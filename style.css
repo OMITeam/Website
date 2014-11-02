@@ -51,6 +51,10 @@
     .transperent_nav {
         background-color: rgba(0, 0, 0, 0.00);
         border-color: rgba(0, 0, 0, 0.00);
+        box-shadow: 0px 6px 11px 0px rgba(0,0,0,0) !important;
+    }
+    #Main_nav{
+        box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.5);
     }
     .transperent_nav .dropdown-menu{
         background-color:rgba(255, 255, 255, 0.00);
