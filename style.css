@@ -10,6 +10,10 @@
         text-align:right;
         float:right;
     }
+    #left{
+        text-align:left;
+        float:left;
+    }
 
 /*Total propartys*/
     article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{
@@ -99,7 +103,7 @@
         opacity:1;
     }
     .about_info_hide{
-        
+        text-align:left;
     }
 /*===Footer===*/
     .footer {

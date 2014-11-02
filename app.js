@@ -1,4 +1,9 @@
 main = function () {
+    /*Things to be done once*/
+    Do_once();
+    $("img.Image_opc").click(function () {
+        collaps_about_us(this);
+    });
     /*Navigation bar*/
     $(".navbar-nav li").click(Navnar_highlight);
     /*dropdown menu*/
@@ -10,10 +15,9 @@ main = function () {
     });
 
     /*Collapses the navigation bar when scrolled down*/
-     $(document).scroll(Navigation_collaps);
+    $(document).scroll(Navigation_collaps);
     /*Collapses the navigation bar items when scrolled down*/
-     $(document).scroll(collapseItems);
-     $(".about_us a").click(collaps_about_us(this));
+    $(document).scroll(collapseItems);
 };
 
 
@@ -21,10 +25,19 @@ main = function () {
  * Input: image pressed
  * Output: collapses the iformation
  */
-var collaps_about_us = function (item) {
+function collaps_about_us(item) {
+    a = 200;
     name = "#" + $(item).attr('id') + "_about";
-    $(name).show();
-}
+    row = document.getElementById($(item).attr('id') + "_row");
+    if ($(name).hasClass("active_about_us")) {
+        $(name).hide(a).removeClass("active_about_us");
+        $(".other_about").delay(a + 10).show(a);
+
+    } else {
+        $(".other_about").not(row).hide(a);
+        $(name).delay(a).toggle(a).addClass("active_about_us");
+    }
+};
 
 /*Navigation bar collapse function*/
 var Navigation_collaps = function () {
@@ -105,3 +118,7 @@ var Navnar_highlight = function () {
 }
 
 $(document).ready(main);
+
+var Do_once = function () {
+    $(".about_info_hide").hide();
+}
