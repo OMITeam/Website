@@ -27,8 +27,8 @@
         background-color:rgba(0, 0, 0, 0.00);
         border-color:rgba(0, 0, 0, 0.00);
     }   
-    .transperent_nav .nav ul li a {/*Try to fix this issue and then remove the comment*/
-        color:rgb(186, 178, 178);
+    nav.transperent_nav.navbar.navbar-default.navbar-fixed-top  a {
+        color:rgb(255, 255, 255) !important;
     }
 
 /*Main jumbotron*/
