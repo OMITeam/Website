@@ -13,7 +13,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     background-size:cover;
 }
 
-
 #center{
     text-align:center;
 }
@@ -59,6 +58,8 @@ article header {
 .Image_opc{
     opacity:0.4;
     filter:alpha(opacity=40);
+    width: 250px;
+    height: 250px;
 }
 .Image_opc:hover{
     opacity:1;
