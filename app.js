@@ -13,9 +13,12 @@ main = function () {
         $(document).scroll(Navigation_collaps);
 };
 /*Navigation bar collapse function*/
-var Navigation_collaps = function(){
+var Navigation_collaps = function () {
+
+
     var current_scroll_top = $(document).scrollTop();
     var current_scroll_bot = $(window).height() - current_scroll_top;
+
     if (current_scroll_top >= 50) {
         $(".transperent_nav").removeClass("transperent_nav", 200);
     } else {
@@ -37,7 +40,10 @@ var Navigation_collaps = function(){
     }
 }
 
-/*Highlight the selected item*/
+/*Highlight the selected item
+ * Input:none
+ * Output:Highlights the current tab
+ */
 var Navnar_highlight = function () {
     var current = $(".activate");
     if (current !== null) {
