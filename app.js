@@ -88,6 +88,7 @@ var Navnar_highlight = function () {
     removeActivate();
     if (!$(this).hasClass("dropdown")) {
         $(this).addClass("activate");
+        $(".dropdown-menu").hide(600);
     }
 }
 
