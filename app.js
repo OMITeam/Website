@@ -32,7 +32,6 @@ function collaps_about_us(item) {
     if ($(name).hasClass("active_about_us")) {
         $(name).hide(a).removeClass("active_about_us");
         $(".other_about").delay(a + 10).show(a);
-
     } else {
         $(".other_about").not(row).hide(a);
         $(name).delay(a).toggle(a).addClass("active_about_us");
@@ -50,7 +49,7 @@ var Navigation_collaps = function () {
     }
     
 }
-/*Ofir the gay dont touch*/
+/*---------------Ofir section-----------------*/
 var collapseItems = function () {
     var current_scroll_top = $(document).scrollTop();    
 
