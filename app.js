@@ -38,11 +38,14 @@ function collaps_about_us(item) {
     }
 };
 
-/*Navigation bar collapse function*/
+/*Navigation bar collapse function
+ * Input:Scroll event
+ * Output:Changes the navbar from transperent is scrolled
+ */
 var Navigation_collaps = function () {
     var current_scroll_top = $(document).scrollTop();
 
-    if (current_scroll_top >= 50) {
+    if (current_scroll_top >= 1) {
         $(".transperent_nav").removeClass("transperent_nav", 200);
     } else {
         $("#Main_nav").addClass("transperent_nav", 200);
