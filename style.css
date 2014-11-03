@@ -86,9 +86,14 @@
         background-attachment:fixed;
         background-size:cover;
         box-shadow: inset 0px -14px 37px 0px rgba(0,0,0,0.75);
+        margin:0 0 0 0;
     }
 
 /*About us section*/
+    .about_us{
+        background-color:silver;
+        box-shadow: inset 0px -14px 37px 0px rgba(0,0,0,0.35);
+    }
     .about_name {
         font-size: 24px;
         color: rgb(194, 194, 194);
