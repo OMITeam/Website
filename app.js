@@ -18,7 +18,11 @@ main = function () {
     $(document).scroll(Navigation_collaps);
     /*Collapses the navigation bar items when scrolled down*/
     $(document).scroll(collapseItems);
+    $("#stiky_about").sticky({ topSpacing: 50 });
+    $("#stiky_contact").sticky({ topSpacing: 0 });
 };
+
+
 
 
 /*Collaps the information
