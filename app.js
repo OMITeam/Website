@@ -18,8 +18,8 @@ main = function () {
     $(document).scroll(Navigation_collaps);
     /*Collapses the navigation bar items when scrolled down*/
     $(document).scroll(collapseItems);
-    $("#stiky_about").sticky({ topSpacing: 50 });
-    $("#stiky_contact").sticky({ topSpacing: 0 });
+    /*$("#stiky_about").sticky({ topSpacing: 50 });
+    $("#stiky_contact").sticky({ topSpacing: 100 });*/
 };
 
 
@@ -56,7 +56,7 @@ var Navigation_collaps = function () {
     }
     
 }
-/*---------------Ofir section-----------------*/
+/*---------------Ofir section-- 8===========D---*/
 var collapseItems = function () {
     var current_scroll_top = $(document).scrollTop();    
 
