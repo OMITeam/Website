@@ -1,8 +1,11 @@
 main = function () {
     /*Things to be done once*/
     Do_once();
-    $("img.Image_opc").click(function () {
+    $("img.Image_abt").click(function () {
         collaps_about_us(this);
+    });
+    $("img.Image_srv").click(function () {
+        collaps_our_service(this);
     });
     /*Navigation bar*/
     $(".navbar-nav li").click(Navnar_highlight);
@@ -39,6 +42,23 @@ function collaps_about_us(item) {
     } else {
         $(".other_about").not(row).hide(a);
         $(name).delay(a).toggle(a).addClass("active_about_us");
+    }
+};
+
+/*Collaps the information
+ * Input: image pressed
+ * Output: collapses the iformation
+ */
+function collaps_our_service(item) {
+    a = 200;
+    name = "#" + $(item).attr('id') + "_service";
+    row = document.getElementById($(item).attr('id') + "_row");
+    if ($(name).hasClass("active_our_service")) {
+        $(name).hide(a).removeClass("active_our_service");
+        $(".other_service").delay(a + 10).show(a);
+    } else {
+        $(".other_service").not(row).hide(a);
+        $(name).delay(a).toggle(a).addClass("active_our_service");
     }
 };
 
@@ -128,4 +148,5 @@ $(document).ready(main);
 
 var Do_once = function () {
     $(".about_info_hide").hide();
+    $(".service_info_hide").hide();
 }
