@@ -1,6 +1,7 @@
 main = function () {
     /*Things to be done once*/
     Do_once();
+
     $("img.Image_abt").click(function () {
         collaps_about_us(this);
     });
@@ -21,8 +22,6 @@ main = function () {
     $(document).scroll(Navigation_collaps);
     /*Collapses the navigation bar items when scrolled down*/
     $(document).scroll(collapseItems);
-    /*$("#stiky_about").sticky({ topSpacing: 50 });
-    $("#stiky_contact").sticky({ topSpacing: 100 });*/
 };
 
 
@@ -36,12 +35,16 @@ function collaps_about_us(item) {
     a = 200;
     name = "#" + $(item).attr('id') + "_about";
     row = document.getElementById($(item).attr('id') + "_row");
-    if ($(name).hasClass("active_about_us")) {
+    if ($(name).hasClass("active_about_us"))
+    {
         $(name).hide(a).removeClass("active_about_us");
-        $(".other_about").delay(a + 10).show(a);
-    } else {
+        $(".other_about").delay(a).show(a);
+        $(item).removeClass("Image_abt_active");
+    } else
+    {
         $(".other_about").not(row).hide(a);
         $(name).delay(a).toggle(a).addClass("active_about_us");
+        $(item).addClass("Image_abt_active");
     }
 };
 
@@ -53,10 +56,14 @@ function collaps_our_service(item) {
     a = 200;
     name = "#" + $(item).attr('id') + "_service";
     row = document.getElementById($(item).attr('id') + "_row");
-    if ($(name).hasClass("active_our_service")) {
+    if ($(name).hasClass("active_our_service"))
+    {
+        $(item).removeClass("Image_abt_active")
         $(name).hide(a).removeClass("active_our_service");
         $(".other_service").delay(a + 10).show(a);
-    } else {
+    } else
+    {
+        $(item).addClass("Image_abt_active");
         $(".other_service").not(row).hide(a);
         $(name).delay(a).toggle(a).addClass("active_our_service");
     }

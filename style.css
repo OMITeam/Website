@@ -110,6 +110,9 @@
         width: 250px;
         height: 250px;
     }
+    .Image_abt_active{
+        opacity:1 !important;
+    }
     .Image_abt:hover{
         opacity:1;
     }
