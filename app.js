@@ -61,8 +61,9 @@ var collapseItems = function () {
     var current_scroll_top = $(document).scrollTop();    
 
     var about = collapseItem("about_us", current_scroll_top);
+    var services = collapseItem("services_us", current_scroll_top);
     var contact = collapseItem("contact_us", current_scroll_top);
-    if (about || contact) {
+    if (about || contact || services) {
         return;
     } else {
         removeActivate();
@@ -76,9 +77,9 @@ var collapseItem = function (id, current) {
     var Ioffset = item.offset();
     var Itop = Ioffset.top - 50;
     var Ibot = Itop - item.height();
-    var idl = id.substring(0, id.length-3);
+    var idl = id.substring(0, id.length - 3);
 
-    if ((current >= Itop) && ((current - Ibot) >= (item.height() - 50)) && ((current - Ibot) < Itop)) {
+    if ((current >= Itop) && ((current - Ibot) >= (item.height() - 50)) && ((Itop + 60) > (current - Ibot))) {
         if (!checkActivate()) {
             return;
         }
