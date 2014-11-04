@@ -99,7 +99,7 @@ var collapseItem = function (id, current) {
     var Ibot = Itop - item.height();
     var idl = id.substring(0, id.length - 3);
 
-    if ((current >= Itop) && ((current - Ibot) >= (item.height() - 50)) && ((Itop + 60) > (current - Ibot))) {
+    if ((current >= Itop) && ((current - Ibot) >= (item.height() - 50)) && ((Itop + 50.1) > (current - Ibot))) {
         if (!checkActivate()) {
             return;
         }

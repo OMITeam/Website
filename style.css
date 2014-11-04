@@ -94,7 +94,7 @@
 
 /*About us section*/
     .about_us{
-        background-color:silver;
+        background-color: rgb(167, 183, 181);
         box-shadow: 0px -10px 37px 0px rgba(0,0,0,0.35);
         z-index:-1;
         padding-bottom:50px;
@@ -121,17 +121,9 @@
      top:0;
      z-index:100;
   }
-/*Contact Us*/
-    .contact_us{
-        background-color:silver;
-        box-shadow: 0px -10px 37px 0px rgba(0,0,0,0.35);
-        z-index:0;
-        padding-top:50px;
-        padding-bottom:50px;
-    }
 /*Our Services*/
     .services_us{
-        background-color:silver;
+        background-color: rgb(184, 211, 206);
         box-shadow: 0px -10px 37px 0px rgba(0,0,0,0.35);
         z-index:0;
         padding-top:50px;
@@ -152,6 +144,22 @@
     }
     .Image_srv:hover{
         opacity:1;
+    }
+/*Contact Us*/
+    .contact_us{
+        background-color: rgb(167, 183, 181);
+        box-shadow: 0px -10px 37px 0px rgba(0,0,0,0.35);
+        z-index:0;
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+/*Our Designs*/
+    .designs_us {
+        background-color: rgb(184, 211, 206);
+        box-shadow: 0px -10px 37px 0px rgba(0,0,0,0.35);
+        z-index:0;
+        padding-top:50px;
+        padding-bottom:50px;
     }
 /*===Footer===*/
     .footer {
