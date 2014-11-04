@@ -65,6 +65,9 @@
         box-shadow:none;
         border:none;
     }
+    .transperent_nav .open a:focus{
+        background-color:rgba(0, 0, 0, 0.00) !important;
+    }
     .navbar.navbar-default.navbar-fixed-top a{
         color:black;
     }
