@@ -83,12 +83,8 @@ var Navigation_collaps = function () {
     }
     
 }
-<<<<<<< HEAD:app.js
 
-/*---------------Ofir section-- 8===========D--*/
-=======
 /*---------------Ofir section-------------*/
->>>>>>> origin/master:MyScripts/index.js
 var collapseItems = function () {
     var current_scroll_top = $(document).scrollTop();    
 
