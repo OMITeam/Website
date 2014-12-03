@@ -27,6 +27,8 @@
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{
         display:block;
 }
+
+
 body {
         background:rgb(180, 180, 180);
         font-family: 'Open Sans', sans-serif;
