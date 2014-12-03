@@ -35,13 +35,13 @@
     .transperent_nav .LOGO{
         height:90px;
         width:130px;
-        background-image:url("Images/OMI-LOGO_INV.png");
+        background-image:url("../Images/OMI-LOGO_INV.png");
         background-size:cover;
         background-repeat:no-repeat;
         opacity:0.6;
     }
     .LOGO{
-        background-image:url("Images/OMI-LOGO_COL.png");
+        background-image:url("../Images/OMI-LOGO_COL.png");
         height:50px;
         width:196px;
         background-size:cover;
@@ -85,7 +85,7 @@
 /*Main jumbotron*/
     .jumbotron {
         height:100vh;
-        background-image:url("Images/K2_Mount_Godwin_Austen_Chogori_Savage_Mountain1111.jpg");
+        background-image:url("../Images/K2_Mount_Godwin_Austen_Chogori_Savage_Mountain1111.jpg");
         background-attachment:fixed;
         background-size:cover;
         box-shadow: inset 0px -14px 37px 0px rgba(0,0,0,0.75);
