@@ -83,7 +83,8 @@ var Navigation_collaps = function () {
     }
     
 }
-/*---------------Ofir section-- 8===========D---*/
+
+/*---------------Ofir section-- 8===========D--*/
 var collapseItems = function () {
     var current_scroll_top = $(document).scrollTop();    
 
