@@ -23,12 +23,12 @@
         </div>
     </div>
     <div class="container">
-        <form action="" name="signin" id="signin" method="post" style="padding-top: 10vh" >
+        <form action="../Server/Default.aspx" name="signin" id="signin" method="post" style="padding-top: 10vh" >
             <h1 id="center">OMITeam Sign-In Page</h1>
             <p id="center">
-                <input type="text" placeholder="E-Mail Address" class="type"/>
-                <input type="password" placeholder="Password" class="type" />
-                <input type="button" value="Login" class="button"/>
+                <input type="text" id="email" name="email" placeholder="E-Mail Address" class="type"/>
+                <input type="password" id="password" name="password" placeholder="Password" class="type" />
+                <input type="submit" id="login" name="login" value="Login" class="button"/>
                 <input type="button" value="Register" class="button" onclick="location.href='signup.html'" />
                 <input type="button" value="Forgot Password?" class="button" />
             </p>
