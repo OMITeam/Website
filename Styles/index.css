@@ -1,180 +1,211 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 
 /*Total ids*/
-    #center{
-        text-align:center;
-        align-content:center;
-        align-items:center;
-    }
-    #right{
-        text-align:right;
-        float:right;
-    }
-    #left{
-        text-align:left;
-        float:left;
-    }
+#center{
+    text-align:center;
+    align-content:center;
+    align-items:center;
+}
+
+#right{
+    text-align:right;
+    float:right;
+}
+
+#left{
+    text-align:left;
+    float:left;
+}
 
 /*Total propartys*/
-    article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{
-         display:block;
-    }
-    body {
-         background:rgb(180, 180, 180);
-         font-family: 'Open Sans', sans-serif;
-    }
-    span {
-         color: Silver;
-    }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{
+        display:block;
+}
+
+body {
+        background:rgb(180, 180, 180);
+        font-family: 'Open Sans', sans-serif;
+}
+
+span {
+        color: Silver;
+}
 
 /*Navigation Bar*/
-    /*LOGO*/
-    .navbar-brand{
-        padding-top:0px;
-    }
-    .transperent_nav .LOGO{
-        height:50px;
-        width:90px;
-        background-image:url("../Images/LOGO.png");
-        background-size:cover;
-        background-repeat:no-repeat;
-        opacity:0.6;
-    }
-    .LOGO{
-        background-image:url("../Images/LOGO.png");
-        height:50px;
-        width:90px;
-        background-size:cover;
-        background-repeat:no-repeat;
-        opacity:0.8;
-    }
+/*LOGO*/
+.navbar-brand{
+    padding-top:0px;
+}
+.transperent_nav .LOGO{
+    height:50px;
+    width:90px;
+    background-image:url("../Images/LOGO.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    opacity:0.6;
+}
 
-    .activate {
-        border-bottom: 2px solid Green;
-    }
-    .transperent_nav {
-        background-color: rgba(0, 0, 0, 0.00);
-        border-color: rgba(0, 0, 0, 0.00);
-        box-shadow: 0px 6px 11px 0px rgba(0,0,0,0) !important;
-    }
-    #Main_nav{
-        box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.5);
-    }
-    .transperent_nav .dropdown-menu{
-        background-color:rgba(255, 255, 255, 0.00);
-        box-shadow:none;
-        border:none;
-    }
-    .transperent_nav .open a:focus{
-        background-color:rgba(0, 0, 0, 0.00) !important;
-    }
-    .navbar.navbar-default.navbar-fixed-top a{
-        color:black;
-    }
-    nav.transperent_nav.navbar.navbar-default.navbar-fixed-top  a {
-        color:rgb(255, 255, 255) !important;
+.LOGO{
+    background-image:url("../Images/LOGO.png");
+    height:50px;
+    width:90px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    opacity:0.8;
+}
+
+.activate {
+    border-bottom: 2px solid Green;
+}
+
+.transperent_nav {
+    background-color: rgba(0, 0, 0, 0.00);
+    border-color: rgba(0, 0, 0, 0.00);
+    box-shadow: 0px 6px 11px 0px rgba(0,0,0,0) !important;
+}
+
+#Main_nav{
+    box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.5);
+}
+
+.transperent_nav .dropdown-menu{
+    background-color:rgba(255, 255, 255, 0.00);
+    box-shadow:none;
+    border:none;
+}
+
+.transperent_nav .open a:focus{
+    background-color:rgba(0, 0, 0, 0.00) !important;
+}
+
+.navbar.navbar-default.navbar-fixed-top a{
+    color:black;
+}
+
+nav.transperent_nav.navbar.navbar-default.navbar-fixed-top  a {
+    color:rgb(255, 255, 255) !important;
         
-    }
-    nav.transperent_nav.navbar.navbar-default.navbar-fixed-top .dropdown-menu a:hover {
-        text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
-        background-color:rgba(255, 255, 255, 0);
+}
+
+nav.transperent_nav.navbar.navbar-default.navbar-fixed-top .dropdown-menu a:hover {
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+    background-color:rgba(255, 255, 255, 0);
         
-    }
+}
 
 
 /*Main jumbotron*/
-    .jumbotron {
-        height:100vh;
-        background-image:url("../Images/Simple-Jumbo-OMI.png");
-        background-attachment:fixed;
-        background-size:cover;
-        box-shadow: inset 0px -14px 37px 0px rgba(0,0,0,0.75);
-        margin:0 0 0 0;
-    }
+.jumbotron {
+    height:100vh;
+    background-image:url("../Images/Simple-Jumbo-OMI.png");
+    background-attachment:fixed;
+    background-size:cover;
+    box-shadow: inset 0px -14px 37px 0px rgba(0,0,0,0.75);
+    margin:0 0 0 0;
+}
 
 /*About us section*/
-    .about_us{
-        //background-color: rgb(167, 183, 181);
-        background-image:url("http://www.melovewebdesign.com/wp-content/uploads/2014/03/Blurred_Background_3.jpg");
-        background-attachment:fixed;
-        background-size:cover;
-        box-shadow: 0px -10px 37px 0px rgba(0,0,0,0.35);
-        z-index:-1;
-        padding-bottom:50px;
-        padding-top: 50px;
-    }
-    .about_us *{
-        color: rgb(194, 194, 194);
-        text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
-    }
-    .about_name {
-        font-size: 24px;
-        color: rgb(194, 194, 194);
-        text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
-    }
-    .Image_abt{
-        opacity:0.4;
-        width: 250px;
-        height: 250px;
-    }
-    .Image_abt_active{
-        opacity:1 !important;
-    }
-    .Image_abt:hover{
-        opacity:1;
-    }
-    .about_info_hide{
-        text-align:left;
-    }
-    #the-sticky-div.sticky {
-     position: fixed;
-     top:0;
-     z-index:100;
-  }
+.about_us {
+    /*background-color: rgb(167, 183, 181);*/
+    background-image:url("http://www.melovewebdesign.com/wp-content/uploads/2014/03/Blurred_Background_3.jpg");
+    background-attachment:fixed;
+    background-size:cover;
+    box-shadow: 0px -10px 37px 0px rgba(0,0,0,0.35);
+    z-index:-1;
+    padding-bottom:50px;
+    padding-top: 50px;
+}
+
+.about_us * {
+    color: rgb(194, 194, 194);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.about_name {
+    font-size: 24px;
+    color: rgb(194, 194, 194);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.Image_abt{
+    opacity:0.4;
+    width: 250px;
+    height: 250px;
+}
+
+.Image_abt_active{
+    opacity:1 !important;
+}
+
+.Image_abt:hover{
+    opacity:1;
+}
+
+.about_info_hide{
+    text-align:left;
+}
+
+#the-sticky-div.sticky {
+    position: fixed;
+    top:0;
+    z-index:100;
+}
+
 /*Our Services*/
-    .services_us{
-        background-color: rgb(184, 211, 206);
-        //box-shadow: 0px -10px 37px 0px rgba(0,0,0,0.35);
-        z-index:0;
-        padding-top:50px;
-        padding-bottom:50px;
-    }
-    .service_name {
-        font-size: 36px;
-        color: rgb(194, 194, 194);
-        text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
-    }
-    .service_info_hide{
-        text-align:left;
-    }
-    .Image_srv{
-        opacity:0.4;
-        width: 250px;
-        height: 250px;
-    }
-    .Image_srv:hover{
-        opacity:1;
-    }
+
+.services_us{
+    background-color: rgb(184, 211, 206);
+    /*box-shadow: 0px -10px 37px 0px rgba(0,0,0,0.35);*/
+    z-index:0;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.service_name {
+    font-size: 36px;
+    color: rgb(194, 194, 194);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.service_info_hide{
+    text-align:left;
+}
+
+.Image_srv{
+    opacity:0.4;
+    width: 250px;
+    height: 250px;
+}
+
+.Image_srv:hover{
+    opacity:1;
+}
+
 /*Contact Us*/
-    .contact_us{
-        background-color: rgb(167, 183, 181);
-        box-shadow: 0px -10px 37px 0px rgba(0,0,0,0.35);
-        z-index:0;
-        padding-top:50px;
-        padding-bottom:50px;
-    }
+
+.contact_us{
+    background-color: rgb(167, 183, 181);
+    box-shadow: 0px -10px 37px 0px rgba(0,0,0,0.35);
+    z-index:0;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
 /*Our Designs*/
-    .designs_us {
-        background-color: rgb(184, 211, 206);
-        box-shadow: 0px -10px 37px 0px rgba(0,0,0,0.35);
-        z-index:0;
-        padding-top:50px;
-        padding-bottom:50px;
-    }
+
+.designs_us {
+    background-color: rgb(184, 211, 206);
+    box-shadow: 0px -10px 37px 0px rgba(0,0,0,0.35);
+    z-index:0;
+    padding-top:50px;
+    padding-bottom:50px;
+}
 /*===Footer===*/
-    .footer {
-        text-align: center;
-        font-size: 18px;
-        color: rgba(0, 0, 0, 0.77);
-        border-top: 2px solid rgba(255, 255, 255, 0.19);
-    }
+
+.footer {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(242, 242, 242);
+    border-top: 2px solid rgba(255, 255, 255, 0.19);
+    background-color: rgba(125, 128, 128, 0.5);
+}
