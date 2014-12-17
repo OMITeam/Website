@@ -75,7 +75,6 @@ function collaps_our_service(item) {
  */
 var Navigation_collaps = function () {
     var current_scroll_top = $(document).scrollTop();
-
     if (current_scroll_top >= 1) {
         $(".transperent_nav").removeClass("transperent_nav", 200);
     } else {
@@ -83,12 +82,8 @@ var Navigation_collaps = function () {
     }
     
 }
-<<<<<<< HEAD:app.js
 
-/*---------------Ofir section-- 8===========D--*/
-=======
-/*---------------Ofir section-------------*/
->>>>>>> origin/master:MyScripts/index.js
+/* Ofir's Section */
 var collapseItems = function () {
     var current_scroll_top = $(document).scrollTop();    
 
