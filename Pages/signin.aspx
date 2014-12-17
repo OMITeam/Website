@@ -1,7 +1,9 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="signin.aspx.cs" Inherits="Pages_signin" %>
+
+<!DOCTYPE html>
 <html>
-<head>
-    <!--===jQuery===-->
+<head runat="server">
+     <!--===jQuery===-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="../Scripts/jquery-2.1.0.intellisense.js"></script>
@@ -23,7 +25,7 @@
         </div>
     </div>
     <div class="container">
-        <form action="../Server/Default.aspx" name="signin" id="signin" method="post" style="padding-top: 10vh" >
+        <form action="signin.aspx" name="signin" id="signin" method="post" style="padding-top: 10vh" >
             <h1 id="center">OMITeam Sign-In Page</h1>
             <p id="center">
                 <input type="text" id="email" name="email" placeholder="E-Mail Address" class="type"/>
@@ -31,6 +33,7 @@
                 <input type="submit" id="login" name="login" value="Login" class="button"/>
                 <input type="button" value="Register" class="button" onclick="location.href='signup.html'" />
                 <input type="button" value="Forgot Password?" class="button" />
+                <%=loginInfo %>
             </p>
             
         </form>
