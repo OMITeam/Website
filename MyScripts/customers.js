@@ -1,14 +1,19 @@
-﻿var msg = "";
+﻿var rmsg = "";
+var lmsg = "";
+
+function checkSignIn() {
+
+}
 
 function checkSignUp() {
-    checkUName();
-    checkName();
-    checkEmail();
-    checkPassword();
+    checkRUName();
+    checkRName();
+    checkREmail();
+    checkRPassword();
     // בדיקה האם היו שגיאות בנתונים והחזרת אמת או שקר בהתאם
-    if (msg.length != 0) {
-        document.getElementById('errors').innerHTML = msg;
-        msg = "";
+    if (rmsg.length != 0) {
+        document.getElementById('errors').innerHTML = rmsg;
+        rmsg = "";
         return false;
     }
     else {
@@ -29,38 +34,66 @@ function isNumeric(str) {
     }
 }
 
-function checkUName() {
-    if (isEmpty(document.getElementById("uname").value)) {
-        msg += "<li> You must enter Username </li>";
+function checkRUName() {
+    if (isEmpty(document.getElementById("runame").value)) {
+        rmsg += "<li>You must enter Username</li>";
+        return;
     }
 }
 
-function checkName(){
+function checkRName(){
     // בדיקה שהולד שם
-    if (isEmpty(document.getElementById("fname").value)) {
-        msg += "<li> You must enter your Name </li>";
+    if (isEmpty(document.getElementById("rfname").value)) {
+        rmsg += "<li>You must enter your Name</li>";
+        return;
     }
 }
 
-function checkEmail() {
+function checkREmail() {
     email = "";
-    email = document.getElementById("email");
-    if(isEmpty(email)){
-        msg += "<li> You must enter Your Email-Address";
+    email = document.getElementById("remail");
+    if(isEmpty(email.value)){
+        rmsg += "<li>You must enter Your Email Address</li>";
+        return;
     }
+    cemail = "";
+    cemail = document.getElementById("rcemail");
+    if(isEmpty(cemail.value)){
+        rmsg += "<li>You must to Confirm your Email Address</li>";
+        return;
+    }
+
+    if(email.value != cemail.value){
+        rmsg += "<li>You must to Confirm your Email Address</li>";
+        return;
+    }
+    zch = email.value.charAt(0);
+    if(zch == '.' || zch == '@' || zch == '?' || zch == '!' || zch == ',' || zch == '\\' || zch == '|' || zch == '\"' || zch == '\'' || zch == "/"){
+        rmsg += "<li>You must enter valid Email Address</li>";
+        return;
+    }
+    
+    if(email.value.indexOf("@") != email.value.lastIndexOf("@")){
+        rmsg += "<li>You must enter valid Email Address</li>";
+        return;
+    }
+
 }
 
-function checkPass() {
-    if (isEmpty(document.getElementById("password").value)) {
-        msg += "<li> You must enter Password </li>";
+function checkRPass() {
+    if (isEmpty(document.getElementById("rpassword").value)) {
+        rmsg += "<li>You must enter Password</li>";
+        return;
     }
     if (document.getElementById("cpassword").value != (document.getElementById("password").value)) {
-        msg += "<li> You must to Confirm Your Password </li>";
+        rmsg += "<li>You must to Confirm Your Password</li>";
+        return;
     }
 
     x = "";
     x = document.getElementById("password").value;
     if (x.length < 3 || x.length > 16){ 
-        msg += "<li> The Password must be between 3 to 16 chars</li>";
+        rmsg += "<li>The Password must be between 3 to 16 chars</li>";
+        return;
     }
 }
